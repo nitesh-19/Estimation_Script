@@ -9,7 +9,13 @@ goal_per_day = 3
 # Length of course in days which is 100 days long in our case
 course_length = 100
 
+
 #### PARAMETERS ####
+def bold_text(text_input):
+    bold_start = '\033[1m'
+    bold_end = '\033[0m'
+    return bold_start + str(text_input) + bold_end
+
 
 # File that keeps count of the number of days completed
 f = open("data.txt", "r")
@@ -27,13 +33,13 @@ forecasted_date = todays_date.date() + timedelta(round(days_remaining / average)
 days_till_forecast = forecasted_date - todays_date.date()
 delta_to_goal = (goal_per_day * days_passed) - days_completed
 
-print(f"You have completed {days_completed} days in total.")
-print(f"Your running average is {average} days per day.")
+print(f"You have completed {bold_text(days_completed)} days in total.")
+print(f"Your running average is {bold_text(average)} days per day.")
 print(
-    f"To get to your goal of {goal_per_day} days per day, you need to complete {delta_to_goal} days of additional "
+    f"To get to your goal of {bold_text(goal_per_day)} days per day, you need to complete {bold_text(delta_to_goal)} days of additional "
     f"study today.")
 print(
-    f"Your estimated date of completion at this rate is {forecasted_date} which is {days_till_forecast.days} days from "
+    f"Your estimated date of completion at this rate is {bold_text(forecasted_date)} which is {bold_text(days_till_forecast.days)} days from "
     f"today.")
 
 f = open("data.txt", "w")
@@ -45,7 +51,3 @@ if completed_today != 0:
     f = open("log.txt", "a")
     f.write(f"Finished {completed_today} day(s) worth of content on {todays_date}. Running Average = {average}\n")
     f.close()
-
-
-
-

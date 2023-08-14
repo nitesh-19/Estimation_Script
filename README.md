@@ -1,7 +1,7 @@
 # Estimate my finish date...
 
 Have a long multi-day task in your hand without a deadline?<br><br>
-This script estimates the time it will take to reach completion at your current rate, logs the milestones to a file and tells you the additional amount of work to be done to meet your goal.<br>
+This script tracks and estimates the time it will take to reach completion at your current rate. It logs the milestones to a text file and tells you the additional amount of work to be done to meet your goal.<br>
 I wrote it to help me estimate how much time it will take me to complete a 100 days Python course if I complete 3 days of work in a day.<br>
 You may use it for any such work where you know the structure of the daily work you are going to do.<br>
 

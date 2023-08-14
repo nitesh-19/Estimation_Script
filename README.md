@@ -1,4 +1,4 @@
-# Completion_Estimation_Script
+# Estimate my finish date
 
 Have a long multi-day task in your hand without a deadline?<br><br>
 This script estimates the time it will take to reach completion at your current rate, logs the milestones to a file and tells you the additional amount of work to be done to meet your goal.<br>

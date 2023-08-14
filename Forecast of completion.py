@@ -14,7 +14,7 @@ course_length = 100
 def bold_text(text_input):
     bold_start = '\033[1m'
     bold_end = '\033[0m'
-    return bold_start + str(text_input) + bold_end
+    return bold_start + '\033[93m' + str(text_input) + bold_end
 
 
 # File that keeps count of the number of days completed

@@ -36,7 +36,7 @@ delta_to_goal = (goal_per_day * days_passed) - days_completed
 print(f"You have completed {bold_text(days_completed)} days in total.")
 print(f"Your running average is {bold_text(average)} days per day.")
 print(
-    f"To get to your goal of {bold_text(goal_per_day)} days per day, you need to complete {bold_text(delta_to_goal)} days of additional "
+    f"To get to your goal of total average of {bold_text(goal_per_day)} days per day, you need to complete {bold_text(delta_to_goal)} days of additional "
     f"study today.")
 print(
     f"Your estimated date of completion at this rate is {bold_text(forecasted_date)} which is {bold_text(days_till_forecast.days)} days from "
